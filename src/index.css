@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Google Fonts */
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-arapey: "Arapey", serif;
+}
+
+.features-section {
+  background-color: #f7f7f7; 
+  padding: 2.5rem 0 5rem 5rem; 
+}
+
+.image-container {
+  padding: 10px; /* Reduced padding to create less space at the center of the image */
+}
+
+.bg-glas {
+  background: #252035;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  bottom: 0;
+}
+
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.15);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.banner_slide_item {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.5rem;
+  position: relative;
+}
+
+.banner_image {
+  position: relative;
+  z-index: 2;
+}
+
+.banner_image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; /* Reduced size */
+  height: 500px; /* Reduced size */
+  background-color: #e1e3e5;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.slider_container>.slick-slider>.slick-prev,
+.slider_container>.slick-slider>.slick-next {
+  z-index: 5 !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-inline: calc(var(--spacing) * 10);
+}
+
+.slick-prev {
+  left: 10px !important;
+}
+
+.slick-next {
+  right: 5% !important;
+}
+
+.slider_container>.slick-slider>.slick-prev:before,
+.slider_container>.slick-slider>.slick-next:before {
+  font-family: 'slick';
+  font-size: 52px !important;
+  line-height: 1;
+  opacity: .75;
+  color: #007580 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider_container>.slick-slider>.slick-dots {
+  position: absolute;
+  bottom: 20px !important; /* Adjust this value to move the dots further down */
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slider_container>.slick-slider>.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 22px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider_container>.slick-slider>.slick-dots>li.slick-active button:before {
+  color: #007580 !important;
+}
+
+.delivery_component {
+  margin-top: -4rem;
+  position: relative;
+  z-index: 5;
+}
+
+.features_slider>.slick-slider>.slick-prev {
+  left: -20px !important; /* Adjust this value to move the left arrow further to the left */
+  z-index: 10;
+  display: none;
+}
+
+.features_slider>.slick-slider>.slick-next {
+  right: 10px !important;
+  z-index: 10;
+  display: none;
+}
+
+.features_slider>.slick-slider>.slick-prev:before,
+.features_slider>.slick-slider>.slick-next:before {
+  font-size: 39px !important;
+  color: #007580;
+}
+
+.client_say_description {
+  position: relative;
+}
+
+.client_say_description::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -27px;
+  width: 3px;
+  height: 100%;
+  background-color: #007580;
+}
