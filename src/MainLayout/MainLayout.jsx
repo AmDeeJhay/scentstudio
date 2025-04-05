@@ -7,7 +7,7 @@ import Login from "../pages/Auth/Login/Login";
 import Register from "../pages/Auth/Register/Register";
 import NotFound from "../pages/NotFound/NotFound";
 import AuthCheck from "../AuthCheck/AuthCheck";
-import Footer from "./../components/Footer/Footer";
+// import Footer from "./../components/Footer/Footer";
 
 const MainLayout = () => {
     return (
@@ -26,7 +26,7 @@ const MainLayout = () => {
                 
                 <Route path="*" element={<NotFound />} />
             </Routes>
-           <Footer />         
+           {/* <Footer />          */}
         </BrowserRouter>
     );
 };

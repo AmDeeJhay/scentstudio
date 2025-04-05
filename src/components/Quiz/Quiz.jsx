@@ -53,7 +53,7 @@
 const FragranceQuiz = () => {
   return (
     <div
-      className="relative bg-cover w-full bg-center py-16 px-6 mb-28 text-center"
+      className="relative bg-cover w-full bg-center py-32 px-6 -mb-31 text-center"
       style={{ backgroundImage: "url('/src/assets/features/product_1.png')" }}
     >
       <div className="bg-white/40 backdrop-blur-md py-12 px-6 rounded-lg max-w-2xl mx-auto">

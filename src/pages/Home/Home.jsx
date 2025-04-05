@@ -50,17 +50,16 @@ const Home = () => {
         <Product></Product>
       </div> */}
 
-      {/* newsletter component  */}
-      <div className="w-full flex items-center justify-center -mt-8 pb-[80px] pt-[80px]">
-        <Newsletter></Newsletter>
-      </div>
-
-
       {/* client say component  */}
       <div className="w-full flex items-center justify-center bg-[#f0f2f3] min-h-[589px] pb-[80px] pt-[80px]">
 
         <Clients></Clients>
 
+      </div>
+
+      {/* newsletter component  */}
+      <div className="w-full flex items-center justify-center -mt-8 pb-[80px] pt-[80px]">
+        <Newsletter></Newsletter>
       </div>
 
       {/* footer component  */}

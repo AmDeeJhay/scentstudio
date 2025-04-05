@@ -1,6 +1,6 @@
 const Newsletter = () => {
     return (
-      <div className="bg-[#EDE7F6] p-6 md:p-10 rounded-2xl flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto">
+      <div className="bg-[#EDE7F6] p-32 md:p-10 rounded-2xl flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto">
         {/* Left Section - Text & Input */}
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold text-[#272343]">Join Our Fragrance Journey</h2>
